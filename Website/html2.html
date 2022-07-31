@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width",initial-scale=1.0">
+<!--Τίτλος καρτέλας-->
+	<title>Test page</title>
+</head>
+<body>
+<!--Δημιουργία πίνακα-->
+	<table border>
+	<caption>Όνομα πίνακα</caption>
+		<thead>
+			<tr>
+				<th>Header 1</th>
+				<th>Header 2</th>
+				<th>Header 3</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>00</td>
+				<td>01</td>
+				<td>02</td>
+			<tr>
+				<td>10</td>
+				<td colspan="2">11 και 12</td>
+			<tr>
+				<td>20</td>
+				<td rowspan="2">21 και 31</td>
+				<td>22</td>
+			<tr>
+				<td>30</td>
+				<td>32</td>
+		</tbody>
+	</table>
+<!--Δημιουργία φόρμας input-->
+<h1>Input form</h1>
+<form action="server".php>
+<label for="username">Username:</label>
+<input type="text" maxlength=2 required placeholder="username" name="username">	<!--το name για να ξέρει ο server ποιό field είναι τι, το required για να κάνει υποχρεωτική την συμπλήρωσή του.-->
+<br>
+<label for="password">Password:</label>
+<input type="password" placeholder="password" name="password">   <!--Ίδιο με type="text" με την διαφορά οτι δεν εμφανίζει τους χαρακτήρες (κουκίδες) -->
+<br>
+<label for="date">Date:</label>
+<input type="date">
+<br>
+<label for="email">Email:</label>
+<input type="email" placeholder="email">
+<label for="number">Number:</label>
+<input type="number" placeholder="number">
+<br>
+<input type="checkbox">Επιλογή 1
+<input type="checkbox">Επιλογή 2
+<br>
+<input type="radio" name="radiooption">Επιλογή 1		<!--το name για να ενώσουμε τα δύο radio buttons -->
+<input type="radio" name="radiooption">Επιλογή 2
+<br>
+<select name="cars">
+<option value="Volvo">Volvo</option>
+<option value="Ford">Ford</option>
+</select>
+<br>
+<textarea name="test" id="" cols="40" rows="5">
+κείμενο
+</textarea>
+<br>
+<input type="button" value="troll">
+<br>
+<input type="submit" value="Αποστολή">
+</form>
+</body>
+</html>

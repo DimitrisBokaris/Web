@@ -1,0 +1,62 @@
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse; /* Για να μην υπάρχουν πολλαπλά borders. */
+}
+td {
+    padding: 15px;
+    height: 50px;
+    vertical-align: top; /* Στοιχίζει στην κορυφή τα στοιχεία των γραμμών. */
+}
+tr:hover {
+    background-color: black;
+    color: white;
+}
+tr:first-child {
+    color: purple;
+}
+tr:last-child {
+    color: brown;
+}
+tr:nth-child(even) {    /* Προξενεί αλλαγές μόνο στις ζυγές γραμμές. Odd για τις μονές. */
+    color:red;
+    visibility:hidden;  /* Εξαφανίζει το στοιχείο με την διαφορά οτι ο χώρος που καταλαμβάνει το στοιχείο διατηρείται. */
+}
+
+tr:nth-child(3) {
+    color: blue; 
+}
+.fp {
+    color:orange;
+    /* display:none; Εξαφανίζει το στοιχείο εντελώς (και τον χώρο που καταλαμβάνει). */
+}
+.menu {
+    background:black;
+    color:white;
+    position:fixed; /* Διατηρεί το στοιχείο ακλόνητο αν σκρολλάρουμε τη σελίδα. */
+    top:0px; /* Το top εδώ έχει να κάνει με το browser, καθώς έχουμε fixed position. Με relative θα ήταν στην κορυφή ώς προς το στοιχείο αυτό, όχι αναγκαστικά στην κορυφή της σελίδας δηλαδή. */
+    width:100%;
+}
+.art {
+    position:absolute;
+    right:40px;
+    top:0px;
+}
+.star {
+    position:absolute;
+    right:500px;
+    top:0px;
+    z-index: 1; /* Χρησιμεύει για position absolute. Default value=0. Το στοιχείο με το μεγαλύτερο value εμφανίζεται πάνω πάνω. Δρα σαν προτεραιότητα ουσιαστικά. */
+}
+.trp {
+    height:90px;
+    border:1px dotted black;
+    /*overflow:hidden; Κρύβει ότι περισσεύει από τις διαστάσεις που ορίσαμε. */
+    /*overflow:scroll;  Βάζει μπάρες και μπορούμε να σκρολλάρουμε. */
+    overflow:auto; /* Βάζει μπάρες μόνο αν χρειάζεται, δηλαδή μόνο αν ξεπερνάμε τις διαστάσεις που ορίσαμε. */
+}
+.trp1 {
+    width:400px;
+    border:1px dotted black;
+    float: right; /* Ταξινομεί τα στοιχεία από δεξιά προς τα αριστερά, (δηλαδή το πρώτο θα πάει δεξιά). */
+    /* display:inline-block; Κάνει το ίδιο με την float */
+}

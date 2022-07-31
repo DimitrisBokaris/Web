@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2-1</title>
+</head>
+<body>
+    <h1>Αίτηση έκδοσης πιστοποιητικού</h1>
+
+    <form>
+
+        <fieldset>
+
+            <legend>
+                Στοιχεία φοιτητή
+            </legend>
+            <i>Συμπληρώστε τα στοιχεία σας με ελληνικούς χαρακτήρες</i>
+
+            <br><br>
+            Ονοματεπώνυμο<br>
+            <label for="name"> </label>
+            <input type="text" id="name" name="name" required placeholder="'Ονομα">
+            <label for="surname"> </label>
+            <input type="text" id="surname" name="surname" required placeholder="Επώνυμο">
+
+
+            <br><br>
+            Στοιχεία διεύθυνσης<br>
+            <label for="adress"> </label>
+            <input type="text" id="adress" name="adress" size="46" placeholder="Οδός και αριθμός">
+            <br><br>
+            <label for="city"> </label>
+            <input type="text" id="city" name="city" placeholder="Πόλη">
+
+            <label for="tk"></label>
+            <input type="text" id="tk" name="tk" size="20" placeholder="Ταχυδρομικός κώδικας" pattern="[0-9]{5}">
+
+
+            <br><br>
+            Στοιχεία επικοινωνίας<br>
+            <label for="thl"> </label>
+            <input type="text" id="thl" name="thl" minlength="10" placeholder="Τηλέφωνο">
+
+            <label for="email"></label>
+            <input type="email" id="email" pattern=".+@+" placeholder="Διεύθυνση μέιλ">
+
+
+            <br><br>
+            Έτος σπουδών
+            <input type="radio" id="Α" name="year" value="Α">
+            <label for="A">A</label>
+
+            <input type="radio" id="Β" name="year" value="Β">
+            <label for="Β">Β</label>
+
+            <input type="radio" id="Γ" name="year" value="Γ">
+            <label for="Γ">Γ</label>
+
+            <input type="radio" id="Δ" name="year" value="Δ">
+            <label for="Δ">Δ</label>
+
+            <input type="radio" id="Ε" name="year" value="Ε">
+            <label for="Ε">Ε</label>
+
+            <br><br>
+            Αριθμός μητρώου<br>
+            <label for="am"></label>
+
+            <input type="number" id="am" name="am" min="50000" max="2000000" placeholder="1050505">
+
+
+        </fieldset>
+        <fieldset>
+            <legend>
+                Επιλέξτε πιστοποιητικό και τρόπο παραλαβής
+            </legend>
+            Είδος πιστοποιητικού<br>
+            <label for="eidosp"></label>
+            <select id="eidosp" name="eidosp" form="eidosp">
+                <option value="fwtotypiakartelas">Φωτοτυπία καρτέλας</option>
+                <option value="bebaiwshfoithshs">Βεβαίωση φοίτησης</option>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <legend>
+                Παραλαβή πιστοποιητικού
+            </legend>
+
+            <div>
+                <input type="radio" id="gram" name="drone" value="gram">
+                <label for="gram">Παραλαβή από τη γραμματεία</label>
+            </div>
+
+            <div>
+                <input type="radio" id="oikia" name="drone" value="oikia">
+                <label for="oikia">Αποστολή στη διεύθυνση οικίας</label>
+            </div>
+
+
+            <br>
+            Ημερομηνία παραλαβής<br>
+            <label for="start"></label>
+            <input type="date" id="start" name="trip-start" value="yyyy-mm-dd" min="2021-01-01" max="2026-12-31" required>
+
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Υποβολή">
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+* {
+    color: brown;   /* o  selector * πιάνει όλα τα elements */
+}
+.firstheader {
+    color: blue;
+}
+body {
+    background: url("artimage.jpg") no-repeat right top;
+    background-size: 100% 100%;
+    /* background-attachment: fixed;  Για να παραμένει σταθερή η εικόνα */
+}
+.secondp {
+    font-size: 2em; /* Διπλάσιο μέγεθος από το font-size που κληρονομεί η κλάση αυτή */
+    text-align: left;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-style: italic;
+    text-decoration: overline;
+    text-transform: uppercase;
+    text-indent: 30px;
+    word-spacing: 10px;
+    line-height: 2.8;
+}
+h2,h3 {
+    color: Red;
+}
+.div1{
+    background-color: orange;
+    border: 1px solid yellow;
+    border-bottom: 3px dotted black;
+    border-radius: 2px; /* H γωνία που θα έχει το border. Όσο περισσότερο τόσο πιο στρογγυλό το border */
+    padding: 20px; /* Η απόσταση του στοιχείου από τα όριά του. */
+    /* padding-bottom: 15px; Η απόσταση του border μόνο από την κάτω μεριά */
+    /* padding: 30px 10px 20px 50px; πάνω , δεξία, κάτω, αριστερά αντίστοιχα (δεξιόστροφα) */
+    margin: 20px; /* Η απόσταση που θα έχει το στοιχείο από άλλα στοιχεία */
+    /* Ορίζεται margin-top, margin-bottom αντίστοιχα με το padding */
+}
+h1:hover{   /* Όταν πας τον δείκτη πάνω στο ελεμεντ, αλλάζει χρώμα. */
+    color:red;
+}
+a:active{   /* Για όσο είναι πατημένο το λινκ αλλαγή χρώματος . */
+    color:white;
+}
+ul {
+    list-style-type: square;
+}
+

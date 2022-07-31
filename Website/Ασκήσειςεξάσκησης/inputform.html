@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="Fname">First Name:</label>
+            <input type="text" id="fname" name="Fname" required>
+        </div>
+        <div>
+            <label for="Lname">Last Name:</label>
+            <input type="text" id="Lname" name="Lname" required>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required step="5" max="100">
+        </div>
+        <div>
+            Gender:
+            <label for="Male">Male</label>
+            <input type="radio" id="Male" name="gender" value="Male">
+            <label for="Female">Female</label>
+            <input type="radio" id="Female" name="gender" value="Female">
+        </div>
+        <div>
+            <label for="continent">Continent:</label>
+            <select name="continent" id="continent">
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Asia">Asia</option>
+                <option value="Africa">Africa</option>
+                <option value="Austrlia">Australia</option>
+                <option value="Antarctica">Antarctica</option>
+            </select>
+        </div>
+        <div>
+            <label for="file">Upload a file:</label>
+            <input type="file" id="file" name="file">
+        </div>
+        <div>
+            <label for="color">Favourite color:</label>
+            <input type="color" id="color" name="color">
+        </div>
+        <div>
+            <label for="Skill">Skill:</label>
+            <input type="range" id="skill" name="skill" min="1" max="100" value="10">
+        </div>
+        <div>
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comment here."></textarea>
+        </div>
+    </form>
+</body>
+</html>
