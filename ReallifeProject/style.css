@@ -1,0 +1,32 @@
+*{
+
+    box-sizing: border-box;
+
+}
+
+.main_menu{
+
+    border: solid black 2px;
+    padding:10px;
+    margin: 10px;
+    display: flex;
+}
+
+#ena{
+
+    display: flex;
+    align-items: flex-end;
+
+}
+
+#logo{
+
+    
+    align-items: flex-start;
+}
+
+nav{
+
+    display:flex;
+    align-items: flex-end;
+}
